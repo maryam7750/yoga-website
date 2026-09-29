@@ -1,0 +1,14 @@
+.media-player {
+    display: flex;
+}
+
+.prev {
+    flex: 2;
+}
+
+.play{
+    flex: 1;
+}
+.next {
+    flex: 1;
+}

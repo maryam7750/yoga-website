@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Section title */
+.section-title {
+    border-bottom: 2px solid #222;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    background: #222;
+    color: white;
+    padding: 8px 12px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* Articles */
+.article {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+    margin-bottom: 38px;
+}
+
+.article img {
+    width: 220px;
+    height: 155px;
+    object-fit: cover;
+}
+
+.article h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.meta {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.meta span {
+    color: #777;
+}
+
+.article p,
+.featured p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.advertisement {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.ad-box {
+    width: 300px;
+    height: 250px;
+    margin: 5px auto;
+    padding: 40px 10px;
+    color: white;
+    background: url("ad.jpg") center/cover;
+}
+
+.ad-box button {
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Featured */
+.featured-title {
+    background: #8d50c0;
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 25px;
+}
+
+.featured h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 162px;
+    object-fit: cover;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background: #111;
+    color: white;
+    padding: 3px 7px;
+    font-size: 10px;
+}
+
+/* Buttons */
+.side-buttons {
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    display: grid;
+    gap: 5px;
+}
+
+.side-buttons button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.back-top {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    background: #45afe5;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .article {
+        grid-template-columns: 1fr;
+    }
+
+    .article img {
+        width: 100%;
+    }
+}

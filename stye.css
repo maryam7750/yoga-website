@@ -1,0 +1,38 @@
+  nav{
+    display: flex;
+    background-color: aqua;
+    text-decoration: none;
+    justify-content: center;
+   
+   
+   
+  }
+ 
+  nav ul {
+    display: flex;
+    list-style: none;
+  
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+    .container{
+    display: flex;
+    min-width: 200px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: #000;
+    gap: 10px;
+    width: 30px;
+    
+    
+}
+img1{
+    min-width: 50%;
+    align-items: center; 
+gap: 10px;
+width: 30px;
+
+}
